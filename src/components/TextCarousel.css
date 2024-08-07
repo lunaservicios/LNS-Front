@@ -6,43 +6,70 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px; /* Ajusta la altura según tus necesidades */
-    background-color: #ffffff; /* Fondo blanco */
+    height: 300px;
+    background-color: #ffffff;
   }
-  
+  .carousel-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .carousel-container h4 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: white;
+
+  }
   .carousel-text {
-    color: #3784ac; /* Color del texto */
-    font-size: 18px; /* Tamaño de la fuente */
+    color: #3784ac;
+    font-size: 18px;
     text-align: center;
     margin: 0;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
   }
-  .carousel .slide img {
-    height: 100%;
-    object-fit: cover;
-}
   
   .carousel-text h2, .carousel-text h3, .carousel-text h4 {
-    margin: 10px 0; /* Espaciado entre títulos */
+    margin: 10px 0;
   }
   
   .carousel-text h2 {
-    font-size: 24px; /* Tamaño del título principal */
+    font-size: 24px;
     display: flex;
-    align-items: center; /* Alinea el logo y el texto verticalmente */
-    justify-content: center; /* Alinea el logo y el texto horizontalmente */
+    align-items: center;
+    justify-content: center;
   }
   .carousel-text h2 .logo {
-    width: 24px; /* Ajusta el tamaño del logo para que coincida con el tamaño del texto */
-    height: auto; /* Mantiene la proporción del logo */
-    margin-right: 10px; /* Espacio entre el logo y el texto */
+    width: 24px !important;
+    height: auto;
+    margin-right: 10px;
   }
   .carousel-text h3 {
-    font-size: 20px; /* Tamaño del subtítulo */
+    font-size: 20px;
   }
   
   .carousel-text h4 {
-    font-size: 16px; /* Tamaño del texto */
-    line-height: 1.5; /* Espaciado entre líneas */
+    font-size: 16px;
+    line-height: 1.5;
   }
-  
+ .carousel-paragraph {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3784ac;
+}
+
+.carousel-paragraph.collapsed {
+  height: 60px;
+  overflow: hidden;
+}
+
+.carousel-paragraph.expanded {
+  height: auto;
+}
+
+.toggle-text {
+  color: #000000;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}

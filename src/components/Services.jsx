@@ -1,5 +1,5 @@
 import React from 'react';
-import './Services.css'; // Asegúrate de tener este archivo de estilos
+import './Services.css';
 import image1 from '../components/assets/servicios/service1.jpg';
 import image2 from '../components/assets/servicios/service2.jpg';
 import image3 from '../components/assets/servicios/service3.jpg';

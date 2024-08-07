@@ -1,0 +1,65 @@
+.companies-section {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .companies-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #3784ac;
+  }
+  
+  .companies-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #3784ac;
+  }
+  
+  .divider-companies {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .companies-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .companies-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .divider-companies {
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .content-row-companies {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text-image-companies {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .image-companies {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .image-companies img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    margin-bottom: 30px;
+  }
+  

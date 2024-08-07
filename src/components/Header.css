@@ -19,11 +19,11 @@ html {
 }
 
 .logo img {
-  height: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: 40px;
 }
 
 nav {
-  margin-left: 20px; /* Ajusta el espacio entre el logo y el menú */
+  margin-left: 20px;
 }
 
 nav ul {
@@ -45,14 +45,13 @@ nav ul li a {
 }
 
 nav ul li a svg {
-  margin-right: 5px; /* Espacio entre el icono y el texto */
+  margin-right: 5px;
 }
 
 body {
   padding-top: 80px; 
 }
 
-/* Estilos para el modal */
 .modal {
   display: flex;
   justify-content: center;
@@ -78,7 +77,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  position: relative; /* Añadido para posicionar la 'X' */
+  position: relative;
 }
 
 .close {

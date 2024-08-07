@@ -7,15 +7,15 @@ body {
 .carousel-container {
   max-width: 70%;
   margin: 0 auto;
-  padding: 20px 0; /* Añade un poco de espacio alrededor del carrusel */
+  padding: 20px 0;
 }
 
 .carousel .slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px; /* Altura fija para las imágenes del carrusel */
-  background-color: #3784ac; /* Asegúrate de que el fondo del carrusel coincida */
+  height: 400px;
+  background-color: #3784ac;
 }
 
 .carousel .slide img {
