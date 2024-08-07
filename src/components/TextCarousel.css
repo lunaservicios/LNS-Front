@@ -1,0 +1,48 @@
+.carousel-container {
+    padding: 20px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  .carousel-text {
+    color: #3784ac; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    text-align: center;
+    margin: 0;
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  .carousel .slide img {
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .carousel-text h2, .carousel-text h3, .carousel-text h4 {
+    margin: 10px 0; /* Espaciado entre títulos */
+  }
+  
+  .carousel-text h2 {
+    font-size: 24px; /* Tamaño del título principal */
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+    justify-content: center; /* Alinea el logo y el texto horizontalmente */
+  }
+  .carousel-text h2 .logo {
+    width: 24px; /* Ajusta el tamaño del logo para que coincida con el tamaño del texto */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+  }
+  .carousel-text h3 {
+    font-size: 20px; /* Tamaño del subtítulo */
+  }
+  
+  .carousel-text h4 {
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+  }
+  

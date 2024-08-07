@@ -4,7 +4,7 @@ import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Services from './components/Services';
-import About from './components/About';
+import TextCarousel from './components/TextCarousel';
 import Footer from './components/Footer';
 import ImageCarousel from './components/ImageCarousel';
 import './App.css';
@@ -16,7 +16,7 @@ function App() {
       <ImageCarousel />
       <HeroSection />
       <Services />
-      <About />
+      <TextCarousel />
       <Footer />
     </div>
   );
