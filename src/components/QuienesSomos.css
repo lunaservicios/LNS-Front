@@ -14,7 +14,6 @@
     font-size: 1.5em;
     margin-bottom: 20px;
     color: white;
-
   }
   
   .divider-about {
@@ -36,7 +35,7 @@
     align-items: center;
     margin: 20px 0;
     width: 80%;
-    color:white
+    color:white;
   }
   
   .text-image-about.reversed {
@@ -47,6 +46,7 @@
     flex: 1;
     text-align: left;
     color: white;
+    text-align: justify;
   }
   
   .image-about {

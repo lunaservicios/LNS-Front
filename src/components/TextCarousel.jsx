@@ -10,7 +10,7 @@ import logo2 from '../components/assets/logos-icons/logotravel.webp';
 const TextCarousel = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleToggle = () => {
+   const handleToggle = () => {
     setExpanded(!expanded);
   };
   return (
@@ -42,35 +42,31 @@ const TextCarousel = () => {
           <h2><img src={logo2} alt="Logo 1" className="logo" />Claudio Sepúlveda</h2>
           <h3>Jefe de Proyectos</h3>
             <p>El trabajo con el equipo de Luna Servicios ha sido como si pertenecieran al equipo Travel 
-              involucrándose en el problema y origen de la solución solicitada.
+              involucrándose en el problema y origen de la solución solicitada.<br /><br />
               El nivel de los profesionales de Luna se nota las ganas de generar resultados acompañando 
-              al cliente , además de asumir con optimismo los ajustes que vamos solicitando al desarrollo.
+              al cliente , además de asumir con optimismo los ajustes que vamos solicitando al desarrollo.<br /><br />
               En resumen, la dinámica de trabajo con ustedes facilita la generación de la solución.</p>
           </p>
         </div>
         <div className="carousel-slide">
           <p className="carousel-text">
-          <h2><img src={logo2} alt="Logo 1" className="logo" />Mauricio González</h2>
+            <h2><img src={logo2} alt="Logo 2" className="logo" />Mauricio González</h2>
             <h3>Analista Programador TI</h3>
-            <p className={`carousel-paragraph ${expanded ? 'expanded' : 'collapsed'}`}>
+            <div className={`carousel-paragraph ${expanded ? 'expanded' : 'collapsed'}`}>
               Luna Servicios ha demostrado ser una empresa excepcional, siempre dispuesta a abordar 
               nuestros desafíos con creatividad y profesionalismo. Lo que más nos ha impresionado es su 
               capacidad para adaptarse a las últimas tendencias tecnológicas y su enfoque en la implementación 
-              de soluciones que son relevantes y efectivas en el mercado actual.
-              {expanded && (
-                <>
-                  Cada vez que trabajamos con Luna Servicios, podemos contar con un equipo dedicado que no solo 
-                  resuelve nuestros problemas actuales, sino que también contribuye significativamente a mejorar 
-                  y optimizar nuestros sistemas existentes. Su experiencia y conocimientos en tecnologías 
-                  actualizadas son una valiosa ventaja para nuestra empresa.
-                  Estamos agradecidos por la dedicación y el compromiso de Luna Servicios en cada proyecto que
-                   hemos emprendido juntos. Su capacidad para ofrecer resultados de calidad y soluciones de fácil 
-                   implementación ha tenido un impacto significativo en nuestro éxito. No podríamos estar más 
-                   contentos con los servicios que brindan y esperamos con ansias continuar nuestra colaboración 
-                   en el futuro.
-                </>
-              )}
-            </p>
+              de soluciones que son relevantes y efectivas en el mercado actual.<br /><br />
+              Cada vez que trabajamos con Luna Servicios, podemos contar con un equipo dedicado que no solo 
+              resuelve nuestros problemas actuales, sino que también contribuye significativamente a mejorar 
+              y optimizar nuestros sistemas existentes. Su experiencia y conocimientos en tecnologías 
+              actualizadas son una valiosa ventaja para nuestra empresa.<br /><br />
+              Estamos agradecidos por la dedicación y el compromiso de Luna Servicios en cada proyecto que
+              hemos emprendido juntos. Su capacidad para ofrecer resultados de calidad y soluciones de fácil 
+              implementación ha tenido un impacto significativo en nuestro éxito. No podríamos estar más 
+              contentos con los servicios que brindan y esperamos con ansias continuar nuestra colaboración 
+              en el futuro.
+            </div>
             <p className="toggle-text" onClick={handleToggle}>
               {expanded ? 'Leer menos' : 'Leer más'}
             </p>
