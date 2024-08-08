@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../components/assets/logo.webp';
-import { FaTwitter, FaInstagram, FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -12,10 +13,10 @@ const Footer = () => {
         </div>
         <div className="footer-center">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="social-icon" />
+            <FontAwesomeIcon icon={faTwitter} style={{ color: 'inherit' }} />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="social-icon" />
+            <FontAwesomeIcon icon={faInstagram} style={{ color: 'inherit' }} />
           </a>
         </div>
         <div className="footer-right">

@@ -27,7 +27,7 @@ footer {
   .social-icon {
     font-size: 35px;
     margin: 0 10px;
-    color: #333;
+    color: inherit;
   }
    
   .contact-item {

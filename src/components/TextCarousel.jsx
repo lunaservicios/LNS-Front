@@ -17,7 +17,7 @@ const TextCarousel = () => {
     <div id="text-carousel" className="carousel-container">
       <h1>Testimonios que avalan nuestro desempeño</h1>
       <h4>La opinion de nuestros clientes es fundamental para el mejoramiento en el desempeño de nuestro servicios.</h4>
-      <hr className="divider-services" />
+      <hr className="divider-carousel-text" />
       <Carousel showThumbs={false} autoPlay infiniteLoop>
         <div className="carousel-slide">
           <p className="carousel-text">

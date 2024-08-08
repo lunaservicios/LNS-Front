@@ -13,7 +13,7 @@ const Services = () => {
       <div className="content-row-services">
         <div className="text-image-services">
           <div className="text-services">
-            <h4>Sevicios y asesoria integral de proyecto</h4>
+            <h4>Servicios y asesoria integral de proyecto</h4>
             <h5>Entregamos asesoria dedicada a cada uno de nuestros proyectos para brindar mejor resultado.</h5>
           </div>
           <div className="image-services">
