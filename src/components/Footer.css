@@ -10,24 +10,22 @@ footer {
     margin-bottom: 10px;
   }
   
-  .footer-left,
+  /* .footer-left,
   .footer-center,
   .footer-right {
     flex: 1;
-  }
+  } */
   
   .footer-logo {
     max-width: 300px;
   }
   
   .footer-center {
-    text-align: center;
+    display: grid;
   }
   
-  .social-icon {
-    font-size: 35px;
-    margin: 0 10px;
-    color: inherit;
+  .footer-social {
+    max-width: 50px;
   }
    
   .contact-item {
@@ -35,12 +33,13 @@ footer {
     align-items: center;
     margin-bottom: 8px;
     text-align: justify;
+    color: rgb(4, 99, 148);
   }
   
   .contact-icon {
     font-size: 18px;
     margin-right: 10px;
-    color: #333;
+    color: rgb(4, 99, 148)
   }
   
   .footer-bottom {
@@ -57,5 +56,5 @@ footer {
   .contact-title {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    color: #333;
+    color: rgba(33, 37, 41, 0.75);
   }

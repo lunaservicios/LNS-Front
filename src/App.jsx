@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import QuienesSomos from './components/QuienesSomos';
 import Services from './components/Services';
@@ -10,10 +10,15 @@ import Companies from './components/Companies';
 import './App.css';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
   return (
     <div className="App">
-      <Header />
-      <ImageCarousel />
+      <Header openModal={openModal} closeModal={closeModal} showModal={showModal} />
+      <ImageCarousel openModal={openModal} />
       <QuienesSomos />
       <Services />
       <TextCarousel />

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../components/assets/logo.webp';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ig from '../components/assets/social-icons/instagram.webp';
+import tw from '../components/assets/social-icons/twitter.webp';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
@@ -12,12 +13,8 @@ const Footer = () => {
           <img src={logo} alt="Logo Luna Servicios" className="footer-logo" />
         </div>
         <div className="footer-center">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} style={{ color: 'inherit' }} />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} style={{ color: 'inherit' }} />
-          </a>
+          <img src={ig} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social" />
+          <img src={tw} href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social"/>
         </div>
         <div className="footer-right">
           <h3 className="contact-title">Contacto</h3>

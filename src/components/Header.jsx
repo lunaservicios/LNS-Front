@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Header.css';
 import logo from '../components/assets/logo.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faHandPointUp, faSuitcase, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleModalOpen = () => {
-    setShowModal(true);
-  };
-
-  const handleModalClose = () => {
-    setShowModal(false);
-  };
-
+const Header = ({ openModal, closeModal, showModal }) => {
   return (
     <header>
       <div className="header-content">
@@ -26,14 +16,14 @@ const Header = () => {
             <li><a href="#home"><FontAwesomeIcon icon={faHome} /> Inicio</a></li>
             <li><a href="#about"><FontAwesomeIcon icon={faHandPointUp} /> Nosotros</a></li>
             <li><a href="#services"><FontAwesomeIcon icon={faSuitcase} /> Servicios</a></li>
-            <li><a href="#" onClick={handleModalOpen}><FontAwesomeIcon icon={faPhone} /> Contacto</a></li>
+            <li><a href="#" onClick={openModal}><FontAwesomeIcon icon={faPhone} /> Contacto</a></li>
           </ul>
         </nav>
       </div>
       {showModal && (
         <div className="modal">
           <div className="modal-content">
-            <span className="close" onClick={handleModalClose}>&times;</span>
+            <span className="close" onClick={closeModal}>&times;</span>
             <div className="modal-body">
               <div className="modal-left">
                 <h2>Contacta con Nosotros</h2>

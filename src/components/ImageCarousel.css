@@ -35,3 +35,56 @@ body {
   width: 100%;
   text-align: center;
 }
+.carousel-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 20px;
+
+}
+
+.carousel-content p {
+  margin: 0 0 10px;
+  color: white;
+}
+
+.carousel-content button {
+  padding: 8px 16px;
+  background-color: #046394;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 210px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.carousel-content button:hover {
+  background-color: #2b6a8b;
+}
+.carousel .control-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid white;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid white;
+}
+.carousel-content.align-right {
+  left: auto;
+  right: 20px;
+  text-align: right;
+}
