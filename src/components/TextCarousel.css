@@ -1,7 +1,7 @@
 .textcarousel-container {
     padding: 20px;
     transition: height 0.3s ease-in-out;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
   }
   
