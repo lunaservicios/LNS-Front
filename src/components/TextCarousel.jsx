@@ -14,13 +14,13 @@ const TextCarousel = () => {
     setExpanded(!expanded);
   };
   return (
-    <div id="text-carousel" className="carousel-container">
+    <div id="text-carousel" className={`textcarousel-container ${expanded ? 'expanded' : 'collapsed'}`}>
       <h1>Testimonios que avalan nuestro desempeño</h1>
       <h4>La opinion de nuestros clientes es fundamental para el mejoramiento en el desempeño de nuestro servicios.</h4>
-      <hr className="divider-carousel-text" />
+      <hr className="divider-textcarousel-text" />
       <Carousel showThumbs={false} autoPlay infiniteLoop>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
             <h2><img src={logo1} alt="Logo 1" className="logo" />Jimena Carrera</h2>
             <h3>Scrum Master</h3>
             <p>Luna servicios nos ha proporcionado desde hace 3 años un equipo de profesionales especializado 
@@ -29,16 +29,16 @@ const TextCarousel = () => {
               para nuestra área en tiempo y forma.</p>
           </p>
         </div>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
             <h2><img src={logo1} alt="Logo 1" className="logo" />Edgar Escudero Frías</h2>
             <h3>Technical Lead</h3>
             <p>Luna Servicios nos ha brindado apoyo estratégico de recursos, lo que nos ha significado 
               gran avance en los proyectos en curso y cumplimiento de metas.</p>
           </p>
         </div>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
           <h2><img src={logo2} alt="Logo 1" className="logo" />Claudio Sepúlveda</h2>
           <h3>Jefe de Proyectos</h3>
             <p>El trabajo con el equipo de Luna Servicios ha sido como si pertenecieran al equipo Travel 
@@ -48,11 +48,11 @@ const TextCarousel = () => {
               En resumen, la dinámica de trabajo con ustedes facilita la generación de la solución.</p>
           </p>
         </div>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
             <h2><img src={logo2} alt="Logo 2" className="logo" />Mauricio González</h2>
             <h3>Analista Programador TI</h3>
-            <div className={`carousel-paragraph ${expanded ? 'expanded' : 'collapsed'}`}>
+            <div className={`textcarousel-paragraph ${expanded ? 'expanded' : 'collapsed'}`}>
               Luna Servicios ha demostrado ser una empresa excepcional, siempre dispuesta a abordar 
               nuestros desafíos con creatividad y profesionalismo. Lo que más nos ha impresionado es su 
               capacidad para adaptarse a las últimas tendencias tecnológicas y su enfoque en la implementación 
@@ -72,8 +72,8 @@ const TextCarousel = () => {
             </p>
           </p>
         </div>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
           <h2><img src={logo1} alt="Logo 1" className="logo" />Víctor Rannou</h2>
           <h3>Engineer Lead</h3>
             <p>En un trabajo de más de 15 años con Luna Servicios hemos llegado a establecer una relación 
@@ -83,8 +83,8 @@ const TextCarousel = () => {
               es lo que esperamos existe transparencia para señalarlo oportunamente.</p>
           </p>
         </div>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
           <h2><img src={logo1} alt="Logo 1" className="logo" />Rubén Barría Martínez</h2>
             <h3>Scrum Master</h3>
             <p>Con LunaServicios hemos trabajado por más de 15 años, en diversos proyecto internos, en todos estos 
@@ -93,8 +93,8 @@ const TextCarousel = () => {
               además de proporcionar siempre su apoyo después de los términos de los proyectos.</p>
           </p>
         </div>
-        <div className="carousel-slide">
-          <p className="carousel-text">
+        <div className="textcarousel-slide">
+          <p className="textcarousel-text">
           <h2><img src={logo1} alt="Logo 1" className="logo" />Paola Vergara</h2>
             <h3>Scrum Master</h3>
             <p>Luna Servicios me ha proporcionado profesionales de excelente nivel, muy comprometidos y 

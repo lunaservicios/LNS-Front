@@ -1,23 +1,27 @@
-.carousel-container {
+.textcarousel-container {
     padding: 20px;
+    transition: height 0.3s ease-in-out;
+    max-width: 100%;
+    margin: auto;
   }
   
-  .carousel-slide {
+  .textcarousel-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 300px;
     background-color: #ffffff;
     padding: 20px;
+    transition: height 0.3s ease-in-out;
   }
-  .carousel-container h1 {
+  .textcarousel-container h1 {
     font-size: 31px;
     margin-bottom: 10px;
     color: white;
     font-weight: 900;
 
   }
-  .carousel-container h4 {
+  .textcarousel-container h4 {
     font-size: 14px;
     margin-bottom: 10px;
     margin-top: -10px;
@@ -25,67 +29,77 @@
     font-weight: 400;
 
   }
-  .carousel-text {
+  .textcarousel-text {
     color: #3784ac;
     font-size: 18px;
     text-align: justify;
     margin: 0;
     background-color: #ffffff;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
   }
   
-  .carousel-text h2, .carousel-text h3, .carousel-text h4 {
+  .textcarousel-text h2, .textcarousel-text h3, .textcarousel-text h4 {
     margin: 10px 0;
   }
   
-  .carousel-text h2 {
+  .textcarousel-text h2 {
     font-size: 24px;
     display: flex;
     align-items: center !important;
     justify-content: center;
     text-align: center !important;
   }
-  .carousel-text h2 .logo {
+  .textcarousel-text h2 .logo {
     width: 24px !important;
     height: auto;
     margin-right: 10px;
   }
-  .carousel-text h3 {
+  .textcarousel-text h3 {
     font-size: 20px;
     text-align: center !important;
   }
   
-  .carousel-text h4 {
+  .textcarousel-text h4 {
     font-size: 16px;
     line-height: 1.5;
   }
-  .carousel-paragraph {
-    max-height: 100px; /* Ajusta la altura según sea necesario */
-    overflow-y: auto; /* Añade scroll vertical */
+  .textcarousel-paragraph {
+    max-height: 100px;
+    overflow: hidden;
     padding: 10px;
     background-color: white;
     border-radius: 5px;
+    transition: max-height 0.3s ease-in-out;
   }
-.carousel-paragraph.collapsed {
+.textcarousel-paragraph.collapsed {
   height: 60px;
   overflow: hidden;
 }
 
-.carousel-paragraph.expanded {
-  height: auto;
+.textcarousel-paragraph.expanded {
+  max-height: 1000px;
+  padding: 0;
+}
+.textcarousel-slide.selected {
+  max-height: 1000px;
 }
 
 .toggle-text {
-  color: #000000;
+  color: rgb(0, 0, 255);
   cursor: pointer;
   margin-top: 10px;
   font-weight: bold;
   text-align: center !important;
 }
-.divider-carousel-text{
+.divider-textcarousel-text{
     border: 0;
     height: 4px;
     background: #fff;
     margin: 20px auto;
     margin-top: 0px;
     width: 30%;
+}
+.carousel .control-dots {
+  position: relative;
 }
