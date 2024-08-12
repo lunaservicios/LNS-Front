@@ -3,8 +3,11 @@
     transition: height 0.3s ease-in-out;
     max-width: 80%;
     margin: auto;
+    
   }
-  
+  .textcarousel-content {
+    position: relative;
+  }
   .textcarousel-slide {
     display: flex;
     align-items: center;
@@ -102,4 +105,10 @@
 }
 .carousel .control-dots {
   position: relative;
+}
+.quote-icon {
+  font-size: 24px;
+  color: #3784ac;
+  margin-right: 10px;
+  vertical-align: top;
 }
