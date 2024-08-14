@@ -20,10 +20,11 @@ body {
 }
 
 .carousel .slide img {
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   object-fit: cover;
 }
+
 
 .carousel .legend {
   background: rgba(0, 0, 0, 0.5);

@@ -1,62 +1,74 @@
 footer {
-    background-color: #ecf7ff;
-    padding: 20px 0px 0px 210px;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  /* .footer-left,
-  .footer-center,
-  .footer-right {
-    flex: 1;
-  } */
-  
-  .footer-logo {
-    max-width: 300px;
-  }
-  
-  .footer-center {
-    display: grid;
-    padding: 0 0 0 200px;
-  }
-  
-  .footer-social {
-    max-width: 50px;
-  }
-   
-  .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    text-align: justify;
-    color: rgb(4, 99, 148);
-  }
-  
-  .contact-icon {
-    font-size: 18px;
-    margin-right: 10px;
-    color: rgb(4, 99, 148)
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    padding: 0 110px 0 100px
-  }
-  .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 205px;
-  }
-  .contact-title {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    color: rgba(33, 37, 41, 0.75);
-  }
+  background-color: #ecf7ff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Espacio entre las secciones */
+  margin-bottom: -67px;
+  padding: 110px;
+  margin-top: -110px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: right; /* Centra el contenido dentro de cada sección */
+}
+
+.footer-logo {
+  max-width: 200px;
+}
+
+.footer-center {
+  display: grid;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los iconos sociales */
+}
+
+.footer-social {
+  max-width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social:hover {
+  transform: scale(1.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido de contacto */
+  margin-bottom: 8px;
+  color: rgb(4, 99, 148);
+}
+
+.contact-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: rgb(4, 99, 148);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 90px;
+}
+
+.contact-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: rgba(33, 37, 41, 0.75);
+}

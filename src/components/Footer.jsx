@@ -13,8 +13,8 @@ const Footer = () => {
           <img src={logo} alt="Logo Luna Servicios" className="footer-logo" />
         </div>
         <div className="footer-center">
-          <img src={ig} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social" />
           <img src={tw} href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social"/>
+          <img src={ig} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social" />
         </div>
         <div className="footer-right">
           <h3 className="contact-title">Contacto</h3>
