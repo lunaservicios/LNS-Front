@@ -8,14 +8,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const TextCarousel = () => {
-  const [expanded, setExpanded] = useState(false);
+  // Estado que manejará la expansión de cada testimonio de forma independiente
+  const [expandedItems, setExpandedItems] = useState({});
 
-  const handleToggle = () => {
-    setExpanded(!expanded);
+  // Función para manejar la expansión o colapso de un testimonio
+  const handleToggle = (index) => {
+    setExpandedItems((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index], // Cambia el estado solo del testimonio con el índice específico
+    }));
   };
 
   return (
-    <div id="text-carousel" className={`textcarousel-container ${expanded ? 'expanded' : 'collapsed'}`}>
+    <div id="text-carousel" className="textcarousel-container">
       <h1 className="carousel-title">Testimonios que avalan nuestro desempeño</h1>
       <h4 className="carousel-subtitle">La opinión de nuestros clientes es fundamental para el mejoramiento en el desempeño de nuestros servicios.</h4>
       <hr className="divider-textcarousel-text" />
@@ -48,12 +53,16 @@ const TextCarousel = () => {
           <div className="textcarousel-slide">
             <h2 className="carousel-heading"><img src={logo2} alt="Logo 2" className="logo" />Claudio Sepúlveda</h2>
             <h3 className="carousel-subheading">Jefe de Proyectos</h3>
-            <p className="carousel-paragraph"><FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
-              El trabajo con el equipo de Luna Servicios ha sido como si pertenecieran al equipo Travel 
-              involucrándose en el problema y origen de la solución solicitada.<br /><br />
-              El nivel de los profesionales de Luna se nota las ganas de generar resultados acompañando 
-              al cliente, además de asumir con optimismo los ajustes que vamos solicitando al desarrollo.<br /><br />
-              En resumen, la dinámica de trabajo con ustedes facilita la generación de la solución.
+            <div className={`textcarousel-paragraph ${expandedItems[0] ? 'expanded' : 'collapsed'}`}>
+             <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
+                El trabajo con el equipo de Luna Servicios ha sido como si pertenecieran al equipo Travel 
+                involucrándose en el problema y origen de la solución solicitada.<br /><br /><br />
+                El nivel de los profesionales de Luna se nota las ganas de generar resultados acompañando 
+                al cliente, además de asumir con optimismo los ajustes que vamos solicitando al desarrollo.<br /><br />
+                En resumen, la dinámica de trabajo con ustedes facilita la generación de la solución.
+                </div>
+            <p className="toggle-text" onClick={() => handleToggle(0)}>
+              {expandedItems[0] ? 'Leer menos' : 'Leer más'}
             </p>
           </div>
         </Carousel.Item>
@@ -62,7 +71,7 @@ const TextCarousel = () => {
           <div className="textcarousel-slide">
             <h2 className="carousel-heading"><img src={logo2} alt="Logo 2" className="logo" />Mauricio González</h2>
             <h3 className="carousel-subheading">Analista Programador TI</h3>
-            <div className={`textcarousel-paragraph ${expanded ? 'expanded' : 'collapsed'}`}>
+            <div className={`textcarousel-paragraph ${expandedItems[1] ? 'expanded' : 'collapsed'}`}>
               <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
               Luna Servicios ha demostrado ser una empresa excepcional, siempre dispuesta a abordar 
               nuestros desafíos con creatividad y profesionalismo. Lo que más nos ha impresionado es su 
@@ -78,8 +87,8 @@ const TextCarousel = () => {
               contentos con los servicios que brindan y esperamos con ansias continuar nuestra colaboración 
               en el futuro.
             </div>
-            <p className="toggle-text" onClick={handleToggle}>
-              {expanded ? 'Leer menos' : 'Leer más'}
+            <p className="toggle-text" onClick={() => handleToggle(1)}>
+              {expandedItems[1] ? 'Leer menos' : 'Leer más'}
             </p>
           </div>
         </Carousel.Item>
